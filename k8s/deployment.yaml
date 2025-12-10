@@ -13,7 +13,8 @@ spec:
         app: springboot-app
     spec:
       containers:
-      - name: springboot
-        image: springboot-app:latest   # GitHub Actions will build this
-        ports:
-        - containerPort: 8080
+        - name: springboot-app
+          image: springboot-app:latest
+          imagePullPolicy: Never   # <---- IMPORTANT FIX
+          ports:
+            - containerPort: 8080
