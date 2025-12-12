@@ -8,5 +8,5 @@ spec:
     app: springboot-app
   ports:
     - port: 80
-      targetPort: 8081   # Spring Boot runs on 8081
-      nodePort: 30080    # Optional: fix NodePort for stable access
+      targetPort: 8081
+      nodePort: 30080

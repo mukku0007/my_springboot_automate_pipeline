@@ -17,7 +17,7 @@ spec:
           image: springboot-app:latest
           imagePullPolicy: Never
           ports:
-            - containerPort: 8081   # Your Spring Boot runs on 8081
+            - containerPort: 8081   # Spring Boot runs on 8081
           env:
             - name: SPRING_DATASOURCE_URL
               value: "jdbc:mysql://mysql:3306/springboot_jdbc?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false"
